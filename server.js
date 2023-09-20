@@ -8,13 +8,16 @@ import bodyParser from 'body-parser';
 import cors from "cors";
 import categoryRoutes from "./routes/categoryRoutes.js"
 import productRoutes from './routes/productRoutes.js';
-import path from 'path'
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const path = required(path);
+
 
 //configure env
 dotenv.config();
-
+//esmodule fix
+const__filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //database config
 connectDB();
 
