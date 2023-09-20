@@ -17,7 +17,7 @@ import { dirname } from 'path';
 //configure env
 dotenv.config();
 //esmodule fix
-const__filename = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 console.log(__dirname);
 //database config
